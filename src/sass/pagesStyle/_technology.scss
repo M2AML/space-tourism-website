@@ -1,0 +1,13 @@
+// @import "../abstracts/colors";
+@import "../abstracts/typography";
+
+.bg__technology {
+   position: absolute;
+   z-index: -1;
+   width: 100vw;
+   height: 100vh;
+   background-image: url("../../../assets/technology/background-technology-desktop.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}

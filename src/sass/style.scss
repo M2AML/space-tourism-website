@@ -1,0 +1,11 @@
+//RESET
+@import "./base/_reset.scss";
+//LAYOUT
+@import "./abstracts/colors";
+@import "./abstracts/typography";
+@import "./layout/navigation";
+//PAGES STYLES
+@import "./pagesStyle/home";
+@import "./pagesStyle/destination";
+@import "./pagesStyle/crew";
+@import "./pagesStyle/technology";

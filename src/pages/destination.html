@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../../dist/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap"
+      rel="stylesheet">
+   <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32x32.png">
+   <title>Destination</title>
+</head>
+
+<body>
+   <div class="container">
+      <div class="bg__destination"></div>
+      <header>
+         <img src="../../assets/shared/logo.svg" alt="logo">
+         <span class="line"></span>
+         <nav class="nav">
+            <a class="nav__link" href="../../home.html"><span class="number">00</span> Home</a>
+            <a class="nav__active" href="./destination.html"><span class="number">01</span> Destination</a>
+            <a class="nav__link" href="./crew.html"><span class="number">02</span> Crew</a>
+            <a class="nav__link" href="./technology.html"><span class="number">03</span> Technology</a>
+         </nav>
+      </header>
+      <section class="destination__section">
+         <h2 class="destination__heading"><span>01</span> Pick your destination</h2>
+         <article class="destination__article">
+            <div class="planets__img">
+               <img class="moon__img planets__img-active" src="../../assets/destination/image-moon.png"
+                  alt="moon image">
+               <img class="mars__img" src="../../assets/destination/image-mars.png" alt="mars image">
+               <img class="europa__img" src="../../assets/destination/image-europa.png"
+                  alt="europa image moon orbiting Jupiter">
+               <img class="titan__img" src="../../assets/destination/image-titan.png"
+                  alt="titan image moon orbiting Saturn">
+            </div>
+            <div class="planets">
+               <ul class="planets__switcher__container">
+                  <li id="moon" class="planets__switcher planets__switcher-active">MOON</li>
+                  <li id="mars" class="planets__switcher">MARS</li>
+                  <li id="europa" class="planets__switcher">EUROPA</li>
+                  <li id="titan" class="planets__switcher">TITAN</li>
+               </ul>
+               <div class="planets__names">
+                  <h2 class="name moon description__slides-active">MOON</h2>
+                  <h2 class="name mars">MARS</h2>
+                  <h2 class="name europa">EUROPA</h2>
+                  <h2 class="name titan">TITAN</h2>
+               </div>
+               <div class="planets__testimonials">
+                  <p class="testimonial moon description__slides-active">See our planet as you’ve never seen it
+                     before. A perfect relaxing trip
+                     away to help regain perspective and come back refreshed. While you’re there, take in some history
+                     by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                  <p class="testimonial mars">Don’t forget to pack your hiking boots. You’ll need them to
+                     tackle
+                     Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the
+                     size of Everest!</p>
+                  <p class="testimonial europa">The smallest of the four Galilean moons orbiting Jupiter,
+                     Europa is a
+                     winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey,
+                     or simple relaxation in your snug wintery cabin.</p>
+                  <p class="testimonial titan">The only moon known to have a dense atmosphere other than
+                     Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get
+                     striking views
+                     of the Rings of Saturn.</p>
+               </div>
+               <div class="planets__distance__travel">
+                  <article class="distance__travel__header">
+                     <p class="distance">AVG. DISTANCE</p>
+                     <p class="travel">Est. travel time</p>
+                  </article>
+                  <article class="distance__travel__number__container">
+                     <div class="moon distance__travel__number description__slides-active">
+                        <p class="number__distance">384,400 km</p>
+                        <p class="number__time">3 days</p>
+                     </div>
+                     <div class="mars distance__travel__number">
+                        <p class="number__distance">225 MIL. km</p>
+                        <p class="number__time">9 months</p>
+                     </div>
+                     <div class="europa distance__travel__number">
+                        <p class="number__distance">628 MIL. km</p>
+                        <p class="number__time">3 years</p>
+                     </div>
+                     <div class="titan distance__travel__number">
+                        <p class="number__distance">1.6 BIL. km</p>
+                        <p class="number__time">7 years</p>
+                     </div>
+                  </article>
+               </div>
+            </div>
+         </article>
+      </section>
+   </div>
+   <script src="../javascript/destination.js"></script>
+</body>
+
+</html>

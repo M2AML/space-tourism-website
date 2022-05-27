@@ -1,0 +1,13 @@
+@mixin font1 ($fontSize) {
+   font-family: 'Bellefair', serif;
+   font-size: calc(($fontSize/16)*1rem);
+}
+
+@mixin font2 ($fontSize) {
+   font-family: 'Barlow Condensed', sans-serif;
+   font-size: calc(($fontSize/16)*1rem);
+}
+@mixin font3 ($fontSize) {
+   font-family: 'Barlow', sans-serif;
+   font-size: calc(($fontSize/16)*1rem);
+}

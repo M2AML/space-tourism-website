@@ -1,0 +1,72 @@
+@import "../abstracts/colors";
+@import "../abstracts/typography";
+// @import"../../sass/layout/navigation";
+
+.bg__home {
+   position: absolute;
+   z-index: -1;
+   width: 100vw;
+   height: 100vh;
+   background-image: url("../../../assets/home/background-home-desktop.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.home__section {
+   margin: 10% auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   width: 80%;
+}
+.home__text {
+   width: 30%;
+}
+.home__section h5 {
+   @include font2(28);
+   font-weight: 400;
+   letter-spacing: 4.75px; 
+   color: $gray-light;
+}
+.home__section h1 {
+   @include font1(150);
+   margin-top: 5%;
+   margin-bottom: 5%;
+   color: $white;
+}
+.home__section p {
+   @include font3(18);
+   line-height: 32px;
+   color: $gray-light;
+}
+.explore__link {
+   @include font1(32);
+   z-index: 10;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: $dark;
+   background-color: $white;
+   height: 15rem;
+   width: 15rem;
+   border-radius: 50%;
+}
+.explore__link::before {
+   z-index: -1;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   content: '';
+   height: 0;
+   width: 0;
+   border-radius: 50%;
+   background-color: $white-clear;
+   transition: all 0.4s ease-in-out;
+}
+.explore__link:hover::before {
+   height: 165%;
+   width: 165%;
+}
