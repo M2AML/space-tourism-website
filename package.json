@@ -1,7 +1,7 @@
 {
-  "name": "newproject",
+  "name": "space-tourism-website",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "home.html",
   "scripts": {
     "sass": "sass --watch src/sass/style.scss dist/style.css"
   },
