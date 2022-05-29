@@ -456,4 +456,134 @@ a {
   background-position: center;
 }
 
+/*Slides Active Animations*/
+.terminology__slides-active {
+  animation: fadeinBottom 0.5s linear;
+  opacity: 1 !important;
+}
+
+@keyframes fadeinBottom {
+  0% {
+    transform: translateY(20%);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.terminology__img-active {
+  opacity: 1 !important;
+}
+
+.technology__container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-left: auto;
+  margin-top: 4.5%;
+}
+
+.technology__container .technology__header {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.75rem;
+  color: white;
+  letter-spacing: 4.72px;
+}
+.technology__container .technology__header span {
+  font-weight: bold;
+}
+
+.technology__container .technology__contain {
+  width: 100%;
+  display: flex;
+  height: 600px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.technology__contain .terminology__container {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.terminology__container .terminology__switcher {
+  font-family: "Bellefair", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.terminology__container .terminology__switcher .number {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 80px;
+  width: 80px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.number-active {
+  background-color: white;
+  color: #0c0e18;
+}
+
+.terminology__container .terminology__text {
+  position: relative;
+  width: 60%;
+}
+
+.terminology__container h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+  color: #d2d8f9;
+  margin-bottom: 15px;
+}
+
+.terminology__container .terminology__header__container {
+  position: relative;
+  font-family: "Bellefair", serif;
+  font-size: 3.625rem;
+  color: white;
+  height: 60px;
+  margin-bottom: 20px;
+}
+.terminology__container .terminology__header__container .terminology__header {
+  position: absolute;
+  opacity: 0;
+}
+
+.terminology__container .terminology__description__container {
+  position: relative;
+  font-family: "Barlow", sans-serif;
+  font-size: 1.125rem;
+  color: #d2d8f9;
+  line-height: 32px;
+  width: 90%;
+}
+.terminology__container .terminology__description__container .terminology__description {
+  position: absolute;
+  opacity: 0;
+}
+
+.technology__contain .terminology__img__container {
+  position: relative;
+  width: 550px;
+  display: flex;
+  align-items: center;
+}
+.technology__contain .terminology__img__container .terminology__img {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
 /*# sourceMappingURL=style.css.map */
