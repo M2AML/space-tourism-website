@@ -168,7 +168,7 @@ a {
   z-index: -1;
   width: 100vw;
   height: 100vh;
-  background-image: url("../../../assets/home/background-home-desktop.jpg");
+  background-image: url("../assets/home/background-home-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -248,7 +248,7 @@ a {
   z-index: -1;
   width: 100vw;
   height: 100vh;
-  background-image: url("../../../assets/destination/background-destination-desktop.jpg");
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -450,7 +450,7 @@ a {
   z-index: -1;
   width: 100vw;
   height: 100vh;
-  background-image: url("../../../assets/technology/background-technology-desktop.jpg");
+  background-image: url("../assets/technology/background-technology-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
