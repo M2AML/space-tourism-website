@@ -12,3 +12,141 @@
    background-size: cover;
    background-position: center;
 }
+
+/*Crew Slides Animation*/
+.crew__slides-active {
+   animation: fadeinRight 0.5s linear;
+   opacity: 1 !important;
+}
+
+@keyframes fadeinRight {
+   0% {
+      transform: translateX(20%);
+   }
+
+   50% {
+      transform: translateX(10%);
+   }
+
+   100% {
+      transform: translateX(0);
+   }
+}
+
+.crew__img-active {
+   opacity: 1 !important;
+}
+
+.crew__section {
+   margin: 4.5% auto 0;
+   width: 80%;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   // background-color: red;
+}
+
+.crew__section .crew__heading {
+   @include font2(28);
+   text-transform: uppercase;
+   color: $white;
+   letter-spacing: 4.72px;
+
+   span {
+      color: $gray-light;
+      font-weight: bold;
+   }
+}
+
+.crew__article {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 90%;
+   height: 693px;
+}
+
+.crew__article .crew__member__container {
+   display: flex;
+   flex-direction: column;
+}
+
+.crew__member__container .member__position__container {
+   position: relative;
+   height: 60px;
+   @include font1(32);
+   text-transform: uppercase;
+   color: $gray-light;
+}
+
+.member__position__container .member__position {
+   position: absolute;
+   opacity: 0;
+}
+
+.crew__member__container .member__name__container {
+   position: relative;
+   height: 80px;
+   width: 800px;
+}
+
+.member__name__container .member__name {
+   @include font1(56);
+   position: absolute;
+   text-transform: uppercase;
+   color: $white;
+   opacity: 0;
+}
+
+.crew__member__container .member__experience__container {
+   position: relative;
+   height: 200px;
+}
+
+.member__experience__container .member__experience {
+   @include font3(20);
+   position: absolute;
+   line-height: 32px;
+   color: $gray-light;
+   width: 500px;
+   opacity: 0;
+}
+
+.crew__member__container .circles__container {
+   display: flex;
+   width: fit-content;
+}
+
+.circles__container .circle {
+   cursor: pointer;
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   background-color: #979797;
+   margin-right: 25px;
+   transition: all 0.3s ease;
+
+   &:hover {
+      background-color: $white !important;
+   }
+}
+
+.circle-active {
+   background-color: $white !important;
+}
+
+.crew__article .crew__img__container {
+   position: relative;
+   width: 40%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+}
+
+.crew__article .crew__img__container .crew__img {
+   position: absolute;
+   bottom: 0;
+   width: auto;
+   opacity: 0;
+}
