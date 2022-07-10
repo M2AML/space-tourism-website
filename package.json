@@ -11,8 +11,5 @@
   "description": "",
   "devDependencies": {
     "sass": "^1.49.0"
-  },
-  "engines": { 
-    "node": "^17.8.0"
   }
 }
