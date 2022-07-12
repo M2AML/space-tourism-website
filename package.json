@@ -1,7 +1,7 @@
 {
   "name": "space-tourism-website",
   "version": "1.0.0",
-  "main": "home.html",
+  "main": "index.js",
   "scripts": {
     "sass": "sass --watch src/sass/style.scss dist/style.css"
   },
@@ -11,8 +11,5 @@
   "description": "",
   "devDependencies": {
     "sass": "^1.49.0"
-  },
-  "engines": { 
-    "node": "^17.8.0"
   }
 }
