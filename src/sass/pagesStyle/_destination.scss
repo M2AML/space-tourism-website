@@ -160,34 +160,41 @@
    width: 100%;
    padding-top: 6%;
    display: flex;
-   flex-direction: column;
-   border-top: 2px solid $gray-light;
+   justify-content: space-between;
+   border-top: 1px solid $white-clear-nav;
 }
 
-.planets__distance__travel .distance__travel__header {
+.planets__distance__travel .distance__container,
+.travel__container {
+   width: 45%;
+}
+
+.planets__distance__travel .distance__header,
+.travel__header {
    @include font2(14);
    color: $gray-light;
    letter-spacing: 2.36px;
-   position: relative;
-   display: flex;
-   justify-content: space-between;
    text-transform: uppercase;
-   width: 80%;
+   width: 100%;
 }
 
-.planets .planets__distance__travel .distance__travel__number__container {
+.planets__distance__travel .distance__number__container,
+.travels__days__container {
+   margin-top: 15px;
    @include font1(28);
    text-transform: uppercase;
    position: relative;
    display: flex;
+   width: 100%;
+   background-color: red;
 }
 
-.distance__travel__number__container .distance__travel__number {
+.planets__distance__travel .distance__number,
+.travels__days {
    margin-top: 2%;
    display: flex;
    justify-content: space-between;
    position: absolute;
-   width: 75%;
    color: $white;
    opacity: 0;
 }

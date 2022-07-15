@@ -1,0 +1,47 @@
+@media screen and (max-width: 640px) {
+   .bg__home {
+      background-image: url("../../../assets/home/background-home-mobile.jpg");
+      background-size: cover;
+      background-position: top;
+   }
+
+   .home__section {
+      margin: 12% auto;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 90%;
+   }
+
+   .home__text {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 5%;
+   }
+
+   .home__section h5 {
+      @include font2(16);
+      letter-spacing: 2.7px;
+   }
+
+   .home__section h1 {
+      @include font1(80);
+      line-height: 100px;
+   }
+
+   .home__section p {
+      @include font3(16);
+      line-height: 25px;
+      text-align: center;
+      margin-bottom: 30px;
+   }
+
+   .explore__link {
+      @include font1(20);
+      letter-spacing: 1.25px;
+      height: 150px;
+      width: 150px;
+   }
+}

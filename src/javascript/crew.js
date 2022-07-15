@@ -1,3 +1,4 @@
+import responsive from "./responsive.js";
 //Slider Btn
 const circle1 = document.querySelector(".circle1");
 const circle2 = document.querySelector(".circle2");

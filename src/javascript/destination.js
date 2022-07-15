@@ -1,3 +1,4 @@
+import responsive from "./responsive.js";
 //SLIDER BTN
 const moon = document.querySelector("#moon");
 const mars = document.querySelector("#mars");

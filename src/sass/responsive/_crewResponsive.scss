@@ -1,0 +1,93 @@
+@media screen and (max-width: 640px) {
+   .bg__crew {
+      background-image: url("../../../assets/crew/background-crew-mobile.jpg");
+      background-size: cover;
+      background-position: top;
+      height: 800px;
+   }
+
+   .crew__section {
+      margin: 10% auto;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 90%;
+   }
+
+   .crew__section .crew__heading {
+      @include font2(16);
+      letter-spacing: 2.7px;
+   }
+
+   .crew__article {
+      margin-top: 40px;
+      flex-direction: column-reverse;
+      width: 100%;
+      height: 500px;
+   }
+
+   .crew__article .crew__member__container {
+      width: 100%;
+      align-items: center;
+      border-top: 1px solid $white-clear-nav;
+   }
+
+   .crew__member__container .member__position__container {
+      order: 2;
+      margin-top: 25px;
+      @include font1(16);
+      height: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .crew__member__container .member__name__container {
+      order: 3;
+      height: 40px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .member__name__container .member__name {
+      @include font1(24);
+      margin-top: 10px;
+   }
+
+   .crew__member__container .member__experience__container {
+      margin-top: 20px;
+      width: 100%;
+      order: 4;
+      height: 100px;
+      text-align: center;
+   }
+
+   .member__experience__container .member__experience {
+      @include font3(15);
+      line-height: 25px;
+      width: 100%;
+   }
+
+   .crew__member__container .circles__container {
+      order: 1;
+      margin-top: 25px;
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .circles__container .circle {
+      width: 12px;
+      height: 12px;
+      margin-right: 0;
+   }
+
+   .crew__article .crew__img__container {
+      width: 55%;
+      justify-content: center;
+   }
+}

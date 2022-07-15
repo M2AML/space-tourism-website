@@ -1,3 +1,4 @@
+import responsive from "./responsive.js";
 const numberOne = document.getElementById("number__one");
 const numberTwo = document.getElementById("number__two");
 const numberThree = document.getElementById("number__three");
@@ -6,9 +7,9 @@ const slideLaunchVehicule = document.querySelectorAll(".launch__vehicule");
 const spacePort = document.querySelectorAll(".spaceport");
 const spaceCapsule = document.querySelectorAll(".space__capsule");
 
-const launchVehiculeImg = document.querySelector(".launch__vehicule__img");
-const spacePortImg = document.querySelector(".spaceport__img");
-const spaceCapsuleImg = document.querySelector(".space__capsule__img");
+const launchVehiculeImg = document.querySelectorAll(".launch__vehicule__img");
+const spacePortImg = document.querySelectorAll(".spaceport__img");
+const spaceCapsuleImg = document.querySelectorAll(".space__capsule__img");
 
 numberOne.addEventListener("click", () => {
   slideNumber(numberOne, numberTwo, numberThree);
@@ -33,9 +34,15 @@ function slideNumber(active, notActive1, notActive2) {
 }
 
 function slideImg(active, notActive1, notActive2) {
-  active.classList.add("terminology__img-active");
-  notActive1.classList.remove("terminology__img-active");
-  notActive2.classList.remove("terminology__img-active");
+  active.forEach((element) => {
+    element.classList.add("terminology__img-active");
+  });
+  notActive1.forEach((element) => {
+    element.classList.remove("terminology__img-active");
+  });
+  notActive2.forEach((element) => {
+    element.classList.remove("terminology__img-active");
+  });
 }
 
 function slideActive(active, notActive1, notActive2) {

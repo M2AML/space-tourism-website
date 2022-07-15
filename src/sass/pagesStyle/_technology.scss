@@ -132,6 +132,10 @@
 
 .technology__contain .terminology__img__container {
    position: relative;
+}
+
+.terminology__img__container .desktop__img {
+   position: relative;
    width: 550px;
    display: flex;
    align-items: center;
@@ -142,4 +146,8 @@
       opacity: 0;
       transition: all 0.3s ease;
    }
+}
+
+.terminology__img__container .mobiles__tablets__img {
+   display: none;
 }

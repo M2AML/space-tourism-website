@@ -1,0 +1,92 @@
+@media screen and (max-width: 640px) {
+   .bg__destination {
+      background-image: url("../../../assets/destination/background-destination-mobile.jpg");
+      background-size: cover;
+      background-position: top;
+      height: 1100px;
+   }
+
+   .destination__section {
+      margin: 10% auto;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+   }
+
+   .destination__section .destination__heading {
+      @include font2(16);
+      letter-spacing: 2.7px;
+   }
+
+   .destination__article {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+   }
+
+   .destination__article .planets__img {
+      width: 80%;
+      height: 280px;
+   }
+
+   .destination__article .planets__img img {
+      width: auto;
+   }
+
+   .planets {
+      width: 100%;
+      height: 540px;
+      align-items: center;
+   }
+
+   .planets .planets__switcher__container {
+      justify-content: space-around;
+      width: 90%;
+   }
+
+   .planets .planets__switcher {
+      @include font2(14);
+      letter-spacing: 2.36px;
+      margin-right: 0;
+   }
+
+   .planets .planets__names {
+      @include font1(56);
+      justify-content: center;
+      margin-top: 25px;
+   }
+
+   .planets .planets__testimonials {
+      margin-top: 0;
+      width: 100%;
+      height: 160px;
+      text-align: center;
+      line-height: 25px;
+      @include font3(15);
+   }
+
+   .planets .planets__distance__travel {
+      position: relative;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding-top: 30px;
+      margin-top: 50px;
+   }
+
+   .planets__distance__travel .distance__container,
+   .travel__container {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .planets__distance__travel .distance__number__container,
+   .travels__days__container {
+      justify-content: center;
+   }
+}

@@ -18,8 +18,12 @@
    <div class="container">
       <div class="bg__technology"></div>
       <header>
-         <img src="../assets/shared/logo.svg" alt="logo">
+         <img src="../../assets/shared/logo.svg" alt="logo">
          <span class="line"></span>
+         <div class="mobile__menu">
+            <img class="hamburger" src="../../assets/shared/icon-hamburger.svg" alt="icon hamburger">
+            <img class="close dispear" src="../../assets/shared/icon-close.svg" alt="icon cross">
+         </div>
          <nav class="nav">
             <a class="nav__link" href="../../index.html"><span class="number">00</span> Home</a>
             <a class="nav__link" href="./destination.html"><span class="number">01</span> Destination</a>
@@ -44,7 +48,8 @@
                      <h2 class="space__capsule terminology__header">SPACE CAPSULE</h2>
                   </article>
                   <article class="terminology__description__container">
-                     <p class="launch__vehicule terminology__description terminology__slides-active">A launch vehicle or carrier rocket
+                     <p class="launch__vehicule terminology__description terminology__slides-active">A launch vehicle or
+                        carrier rocket
                         is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to
                         Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150
                         metres tall, it's quite an
@@ -67,17 +72,27 @@
                </section>
             </article>
             <article class="terminology__img__container">
-               <img src="../../assets/technology/image-launch-vehicle-portrait.jpg" alt="rocket takeoff image"
-                  class="terminology__img launch__vehicule__img terminology__img-active">
-               <img src="../../assets/technology/image-spaceport-portrait.jpg" alt="spaceport image"
-                  class="terminology__img spaceport__img">
-               <img src="../../assets/technology/image-space-capsule-portrait.jpg" alt="capsule image in space"
-                  class="terminology__img space__capsule__img">
+               <div class="desktop__img">
+                  <img src="../../assets/technology/image-launch-vehicle-portrait.jpg" alt="rocket takeoff image"
+                     class="terminology__img launch__vehicule__img terminology__img-active">
+                  <img src="../../assets/technology/image-spaceport-portrait.jpg" alt="spaceport image"
+                     class="terminology__img spaceport__img">
+                  <img src="../../assets/technology/image-space-capsule-portrait.jpg" alt="capsule image in space"
+                     class="terminology__img space__capsule__img">
+               </div>
+               <div class="mobiles__tablets__img">
+                  <img src="../../assets/technology/image-launch-vehicle-landscape.jpg" alt="rocket takeoff image"
+                     class="terminology__landscape__img launch__vehicule__img terminology__img-active">
+                  <img src="../../assets/technology/image-spaceport-landscape.jpg" alt="spaceport image"
+                     class="terminology__landscape__img spaceport__img">
+                  <img src="../../assets/technology/image-space-capsule-landscape.jpg" alt="capsule image in space"
+                     class="terminology__landscape__img space__capsule__img">
+               </div>
             </article>
          </div>
       </section>
    </div>
-   <script src="./../javascript/technology.js"></script>
+   <script type="module" src="./../javascript/technology.js"></script>
 </body>
 
 </html>

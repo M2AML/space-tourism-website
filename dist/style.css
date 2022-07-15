@@ -84,6 +84,10 @@ meter {
   width: 100%;
 }
 
+.mobile__menu {
+  display: none;
+}
+
 header {
   position: relative;
   margin-top: 40px;
@@ -111,7 +115,7 @@ a {
   display: flex;
   align-items: center;
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
   padding-left: 9rem;
   background-color: rgba(255, 255, 255, 0.1);
@@ -163,6 +167,67 @@ a {
   font-weight: bold;
 }
 
+@media screen and (max-width: 640px) {
+  .mobile__menu {
+    z-index: 16;
+    display: block;
+    position: absolute;
+    right: 25px;
+    height: 35px;
+    width: 35px;
+  }
+  .mobile__menu img {
+    position: absolute;
+    width: 100%;
+  }
+
+  .dispear {
+    display: none;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .nav {
+    z-index: 15;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    height: 100vh;
+    width: 0;
+    overflow-x: hidden;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+    padding-top: 9rem;
+    backdrop-filter: blur(15px);
+    transition: all 0.4s ease-in-out;
+  }
+
+  .nav__link,
+.nav__active {
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 1rem;
+    margin-left: 1.5rem;
+  }
+
+  .nav__active::after {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 88.5%;
+    width: 5px;
+    height: 65%;
+  }
+
+  .nav__mobile {
+    width: 70% !important;
+  }
+}
 .bg__home {
   position: absolute;
   z-index: -1;
@@ -400,36 +465,43 @@ a {
   width: 100%;
   padding-top: 6%;
   display: flex;
-  flex-direction: column;
-  border-top: 2px solid #d2d8f9;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 
-.planets__distance__travel .distance__travel__header {
+.planets__distance__travel .distance__container,
+.travel__container {
+  width: 45%;
+}
+
+.planets__distance__travel .distance__header,
+.travel__header {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 0.875rem;
   color: #d2d8f9;
   letter-spacing: 2.36px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
   text-transform: uppercase;
-  width: 80%;
+  width: 100%;
 }
 
-.planets .planets__distance__travel .distance__travel__number__container {
+.planets__distance__travel .distance__number__container,
+.travels__days__container {
+  margin-top: 15px;
   font-family: "Bellefair", serif;
   font-size: 1.75rem;
   text-transform: uppercase;
   position: relative;
   display: flex;
+  width: 100%;
+  background-color: red;
 }
 
-.distance__travel__number__container .distance__travel__number {
+.planets__distance__travel .distance__number,
+.travels__days {
   margin-top: 2%;
   display: flex;
   justify-content: space-between;
   position: absolute;
-  width: 75%;
   color: white;
   opacity: 0;
 }
@@ -498,6 +570,7 @@ a {
 .crew__article .crew__member__container {
   display: flex;
   flex-direction: column;
+  width: 40%;
 }
 
 .crew__member__container .member__position__container {
@@ -711,15 +784,369 @@ a {
 
 .technology__contain .terminology__img__container {
   position: relative;
+}
+
+.terminology__img__container .desktop__img {
+  position: relative;
   width: 550px;
   display: flex;
   align-items: center;
 }
-.technology__contain .terminology__img__container .terminology__img {
+.terminology__img__container .desktop__img .terminology__img {
   position: absolute;
   width: 100%;
   opacity: 0;
   transition: all 0.3s ease;
+}
+
+.terminology__img__container .mobiles__tablets__img {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .bg__home {
+    background-image: url("../../../assets/home/background-home-mobile.jpg");
+    background-size: cover;
+    background-position: top;
+  }
+
+  .home__section {
+    margin: 12% auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+  }
+
+  .home__text {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+
+  .home__section h5 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+  }
+
+  .home__section h1 {
+    font-family: "Bellefair", serif;
+    font-size: 5rem;
+    line-height: 100px;
+  }
+
+  .home__section p {
+    font-family: "Barlow", sans-serif;
+    font-size: 1rem;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .explore__link {
+    font-family: "Bellefair", serif;
+    font-size: 1.25rem;
+    letter-spacing: 1.25px;
+    height: 150px;
+    width: 150px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .bg__destination {
+    background-image: url("../../../assets/destination/background-destination-mobile.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 1100px;
+  }
+
+  .destination__section {
+    margin: 10% auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+  }
+
+  .destination__section .destination__heading {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+  }
+
+  .destination__article {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .destination__article .planets__img {
+    width: 80%;
+    height: 280px;
+  }
+
+  .destination__article .planets__img img {
+    width: auto;
+  }
+
+  .planets {
+    width: 100%;
+    height: 540px;
+    align-items: center;
+  }
+
+  .planets .planets__switcher__container {
+    justify-content: space-around;
+    width: 90%;
+  }
+
+  .planets .planets__switcher {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.875rem;
+    letter-spacing: 2.36px;
+    margin-right: 0;
+  }
+
+  .planets .planets__names {
+    font-family: "Bellefair", serif;
+    font-size: 3.5rem;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .planets .planets__testimonials {
+    margin-top: 0;
+    width: 100%;
+    height: 160px;
+    text-align: center;
+    line-height: 25px;
+    font-family: "Barlow", sans-serif;
+    font-size: 0.9375rem;
+  }
+
+  .planets .planets__distance__travel {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 30px;
+    margin-top: 50px;
+  }
+
+  .planets__distance__travel .distance__container,
+.travel__container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .planets__distance__travel .distance__number__container,
+.travels__days__container {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  .bg__crew {
+    background-image: url("../../../assets/crew/background-crew-mobile.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 800px;
+  }
+
+  .crew__section {
+    margin: 10% auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+  }
+
+  .crew__section .crew__heading {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+  }
+
+  .crew__article {
+    margin-top: 40px;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 500px;
+  }
+
+  .crew__article .crew__member__container {
+    width: 100%;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .crew__member__container .member__position__container {
+    order: 2;
+    margin-top: 25px;
+    font-family: "Bellefair", serif;
+    font-size: 1rem;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .crew__member__container .member__name__container {
+    order: 3;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .member__name__container .member__name {
+    font-family: "Bellefair", serif;
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
+  .crew__member__container .member__experience__container {
+    margin-top: 20px;
+    width: 100%;
+    order: 4;
+    height: 100px;
+    text-align: center;
+  }
+
+  .member__experience__container .member__experience {
+    font-family: "Barlow", sans-serif;
+    font-size: 0.9375rem;
+    line-height: 25px;
+    width: 100%;
+  }
+
+  .crew__member__container .circles__container {
+    order: 1;
+    margin-top: 25px;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .circles__container .circle {
+    width: 12px;
+    height: 12px;
+    margin-right: 0;
+  }
+
+  .crew__article .crew__img__container {
+    width: 55%;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 640px) {
+  .bg__technology {
+    background-image: url("../../../assets/technology/background-technology-mobile.jpg");
+    background-size: cover;
+    background-position: top;
+  }
+
+  .technology__container {
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10% auto;
+  }
+
+  .technology__container .technology__header {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2.7px;
+  }
+
+  .technology__container .technology__contain {
+    flex-direction: column-reverse;
+    height: auto;
+    position: relative;
+  }
+
+  .technology__contain .terminology__container {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .terminology__container .terminology__switcher {
+    display: flex;
+    font-family: "Bellefair", serif;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 15px;
+  }
+
+  .terminology__container .terminology__switcher .number {
+    margin-bottom: 0;
+    height: 40px;
+    width: 40px;
+  }
+
+  .terminology__container .terminology__text {
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .terminology__container h3 {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 0.875rem;
+    letter-spacing: 2.36px;
+  }
+
+  .terminology__container .terminology__header__container {
+    margin-top: 10px;
+    font-family: "Bellefair", serif;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .terminology__container .terminology__description__container {
+    margin-top: 10px;
+    font-family: "Barlow", sans-serif;
+    font-size: 0.9375rem;
+    line-height: 25px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .terminology__img__container .desktop__img {
+    display: none;
+  }
+
+  .terminology__img__container .mobiles__tablets__img {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .terminology__img__container .mobiles__tablets__img .terminology__landscape__img {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -20,6 +20,10 @@
       <header>
          <img src="../../assets/shared/logo.svg" alt="logo">
          <span class="line"></span>
+         <div class="mobile__menu">
+            <img class="hamburger" src="../../assets/shared/icon-hamburger.svg" alt="icon hamburger">
+            <img class="close dispear" src="../../assets/shared/icon-close.svg" alt="icon cross">
+         </div>
          <nav class="nav">
             <a class="nav__link" href="../../index.html"><span class="number">00</span> Home</a>
             <a class="nav__active" href="./destination.html"><span class="number">01</span> Destination</a>
@@ -71,26 +75,22 @@
                      of the Rings of Saturn.</p>
                </div>
                <div class="planets__distance__travel">
-                  <article class="distance__travel__header">
-                     <p class="distance">AVG. DISTANCE</p>
-                     <p class="travel">Est. travel time</p>
+                  <article class="distance__container">
+                     <p class="distance__header">AVG. DISTANCE</p>
+                     <div class="distance__number__container">
+                        <p class="moon distance__number description__slides-active">384,400 km</p>
+                        <p class="mars distance__number">225 MIL. km</p>
+                        <p class="europa distance__number">628 MIL. km</p>
+                        <p class="titan distance__number">1.6 BIL. km</p>
+                     </div>
                   </article>
-                  <article class="distance__travel__number__container">
-                     <div class="moon distance__travel__number description__slides-active">
-                        <p class="number__distance">384,400 km</p>
-                        <p class="number__time">3 days</p>
-                     </div>
-                     <div class="mars distance__travel__number">
-                        <p class="number__distance">225 MIL. km</p>
-                        <p class="number__time">9 months</p>
-                     </div>
-                     <div class="europa distance__travel__number">
-                        <p class="number__distance">628 MIL. km</p>
-                        <p class="number__time">3 years</p>
-                     </div>
-                     <div class="titan distance__travel__number">
-                        <p class="number__distance">1.6 BIL. km</p>
-                        <p class="number__time">7 years</p>
+                  <article class="travel__container">
+                     <p class="travel__header">Est. travel time</p>
+                     <div class="travels__days__container">
+                        <p class="moon travels__days description__slides-active">3 days</p>
+                        <p class="mars travels__days">9 months</p>
+                        <p class="europa travels__days">3 years</p>
+                        <p class="titan travels__days">7 years</p>
                      </div>
                   </article>
                </div>
@@ -98,7 +98,7 @@
          </article>
       </section>
    </div>
-   <script src="../javascript/destination.js"></script>
+   <script type="module" src="../javascript/destination.js"></script>
 </body>
 
 </html>
